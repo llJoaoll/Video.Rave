@@ -1,8 +1,10 @@
 /* style.css */
 body {
+    background: linear-gradient(to bottom, #8A2BE2, #FF1493);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: auto;
 }
 
 header {
@@ -10,37 +12,60 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px;
+    height: auto;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    height: auto;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+    height: auto;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #7607aa;
     font-weight: bold;
+    height: auto;
 }
 
 nav ul li a:hover {
     color: #f00;
+    height: auto;
 }
 
 section {
     margin: 20px;
+    height: auto;
 }
+
+.video-container {
+    display: flex; /* Use display flex para alinhar horizontal e verticalmente */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 100vh; /* Define a altura como 100% da altura da janela visível */
+}
+
+.video-container iframe {
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+}
+
 
 footer {
     background-color: #7607aa;
     color: #fff;
     text-align: center;
     padding: 10px;
+    height: auto;
 }
 
+  /* Estilos para dispositivos móveis (telas menores que 768px de largura) */
+  @media (max-width: 768px) {
+    /* Estilos para telas menores */
 
