@@ -21,13 +21,33 @@
    </nav>
 
    <section>
+
+  
+   
     <h2>Vídeos Recentes</h2>
     <!-- Aqui você pode incluir os vídeos -->
+    <iframe id="meuVideo" src="https://drive.google.com/file/d/1GP0p3TV7drk4HoXkvmpTkC3Fd1Z5eUwo/preview" width="640" height="360" allow="autoplay"></iframe>
+
+    <button id="botaoTelaCheia">Fullscreen</button>
     
-    <video width="640" height="360" controls>
-        <source src="https://drive.google.com/file/d/1GP0p3TV7drk4HoXkvmpTkC3Fd1Z5eUwo/view?usp=drive_link" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-    </video>
+    
+    <script>
+        var meuVideo = document.getElementById("meuVideo");
+        var botaoTelaCheia = document.getElementById("botaoTelaCheia");
+    
+        botaoTelaCheia.addEventListener("click", function() {
+            if (meuVideo.requestFullscreen) {
+                meuVideo.requestFullscreen();
+            } else if (meuVideo.mozRequestFullScreen) {
+                meuVideo.mozRequestFullScreen();
+            } else if (meuVideo.webkitRequestFullscreen) {
+                meuVideo.webkitRequestFullscreen();
+            } else if (meuVideo.msRequestFullscreen) {
+                meuVideo.msRequestFullscreen();
+            }
+        });
+    </script>
+
     
 </section>
 
