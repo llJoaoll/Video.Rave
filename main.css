@@ -7,14 +7,35 @@ body {
     height: auto;
 }
 
+
+
 header {
     background-color: #7607aa;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    padding: 5px;
     height: auto;
 }
 
+h2 {
+    
+    text-align: center;
+
+}
+.LetraTopo {
+
+    /* Reduza o padding do <h1> para zero (ou o valor desejado) */
+    color: #fff;
+    font-family: 'Baloo', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-align: center;
+    height: auto;
+}
+
+.lista{
+    text-align: center;
+    color: #fff;
+    font-family: 'Baloo', cursive;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -51,9 +72,10 @@ section {
     width: 100%; /* Ocupa toda a largura disponível */
     height: 100vh; /* Define a altura como 100% da altura da janela visível */
 }
-
+meuVideo
 .video-container iframe {
     max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+
 }
 
 
