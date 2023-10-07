@@ -94,10 +94,11 @@ section {
     height: 100vh; /* Define a altura como 100% da altura da janela visível */
 }
 
-meuVideo
+#meuVideo {
 .video-container iframe {
     max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
 
+}
 }
 
 #botaoTelaCheia {
@@ -106,6 +107,8 @@ meuVideo
     left: 40%;
     transform: translateX(-500%);
     z-index: 1;
+    margin-top: 5px;
+    height: auto;
 }
 
 
@@ -116,15 +119,15 @@ footer {
     padding: 10px;
     height: auto;
     text-align: center;
-    z-index: 100;
+    z-index:1;
 }
 
   /* Estilos para dispositivos móveis (telas menores que 768px de largura) */
-  @media screen and (max-width: +768px){
-    {
-        width:100%;
-        flex-direction:+column;
+ @media screen and (max-width: 768px) {
+    .video-container {
+        width: 100%;
+        flex-direction: column;
     }
-  }
+}
 
 
