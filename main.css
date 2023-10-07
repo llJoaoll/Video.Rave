@@ -8,10 +8,16 @@ body {
 }
 
 
-
 header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    align-content: center;
     background-color: #7607aa;
-    padding: 5px;
+    padding: 1px;
     height: auto;
 }
 
@@ -20,21 +26,34 @@ h2 {
     text-align: center;
 
 }
+
+.tituloVideo{
+    margin-top: 220px;
+    color: #fff;
+    font-family: 'Baloo', cursive;
+    font-size: 40px;
+    text-align: center;
+  
+}
+
 .LetraTopo {
 
     /* Reduza o padding do <h1> para zero (ou o valor desejado) */
+    margin-top: 5px;
     color: #fff;
     font-family: 'Baloo', cursive;
-    font-size: 50px;
-    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1px;
     text-align: center;
     height: auto;
 }
 
-.lista{
-    text-align: center;
+.SubLetra{
     color: #fff;
     font-family: 'Baloo', cursive;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 12px;
 }
 nav ul {
     list-style: none;
@@ -66,16 +85,27 @@ section {
 }
 
 .video-container {
+    
+    align-content: center;
     display: flex; /* Use display flex para alinhar horizontal e verticalmente */
     justify-content: center; /* Alinha horizontalmente ao centro */
     align-items: center; /* Alinha verticalmente ao centro */
     width: 100%; /* Ocupa toda a largura disponível */
     height: 100vh; /* Define a altura como 100% da altura da janela visível */
 }
+
 meuVideo
 .video-container iframe {
     max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
 
+}
+
+#botaoTelaCheia {
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    transform: translateX(-500%);
+    z-index: 1;
 }
 
 
@@ -85,9 +115,15 @@ footer {
     text-align: center;
     padding: 10px;
     height: auto;
+    text-align: center
 }
 
   /* Estilos para dispositivos móveis (telas menores que 768px de largura) */
-  @media (max-width: 768px) {
-    /* Estilos para telas menores */
+  @media screen and (max-width: +768px){
+    {
+        width:100%;
+        flex-direction:+column;
+    }
+  }
+
 

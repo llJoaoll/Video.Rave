@@ -12,24 +12,27 @@
    <header>
 
     <h1 class="LetraTopo">YasAmor.movie</h1>  
-    <nav class="lista">
-        <p>Eu te amo amor da minha vida</p>
+    <nav class="SubLetra">
+        <span>Eu te amo amor da minha vida</span>
        </nav>
-    
-       <section>
-    
 
-   </header>
+    </header>
+
+
+       <section>
+
+        <div class="tituloVideo">
+            <H1>O novo conto da nova cinderela:</H1>
     
-   
-  
-   
- 
-    
+        </div>
+
     <div class="video-container">
-        <h2>Vídeos Recentes</h2>
         <!-- Aqui você pode incluir os vídeos -->
         <iframe id="meuVideo" src="https://drive.google.com/file/d/1LCwQTq1XWoeXnDLyzKuQSWEpqPhVN-A4/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+    
+    <button id="botaoTelaCheia">Tela Cheia</button>
+
     <script>
         var meuVideo = document.getElementById("meuVideo");
         var botaoTelaCheia = document.getElementById("botaoTelaCheia");
@@ -44,6 +47,7 @@
             } else if (meuVideo.msRequestFullscreen) {
                 meuVideo.msRequestFullscreen();
             }
+            
         });
     </script>
 
