@@ -115,7 +115,8 @@ footer {
     text-align: center;
     padding: 10px;
     height: auto;
-    text-align: center
+    text-align: center;
+    z-index: 100;
 }
 
   /* Estilos para dispositivos móveis (telas menores que 768px de largura) */
