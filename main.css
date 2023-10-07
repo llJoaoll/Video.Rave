@@ -9,7 +9,7 @@ body {
 
 
 header {
-    position: fixed;
+    position: flex;
     z-index: 100;
     top: 0;
     left: 0;
@@ -28,7 +28,7 @@ h2 {
 }
 
 .tituloVideo{
-    margin-top: 220px;
+    margin-top: 20px;
     color: #fff;
     font-family: 'Baloo', cursive;
     font-size: 40px;
@@ -118,7 +118,7 @@ footer {
     text-align: center;
     padding: 10px;
     height: auto;
-    text-align: center;
+    font-family: 'Baloo', cursive;
     z-index:1;
 }
 
